@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./Lobby.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="top">
+        top
+    </ui:define>
+
+    <ui:define name="content">
+        <h:form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>CREAR TERRENO</legend>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dibujarTerreno"></label>
+  <div class="col-md-4">
+    <h:button styleClass="btn btn-primary" value="Dibujar Terreno"/>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ubicacion"></label>
+  <div class="col-md-4">
+    <h:button styleClass="btn btn-primary" value="Ubicacion"/>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tipoDeSuelo"></label>
+  <div class="col-md-4">
+    <select id="tipoDeSuelo" name="tipoDeSuelo" class="form-control">
+      <option value="1">Arenoso</option>
+      <option value="2">Tierra negra</option>
+      <option value="3">Arcilloso</option>
+    </select>
+      
+    <h:selectOneMenu value="#{userData.data}">
+        <f:selectItem itemValue="1" itemLabel="km2" />
+        <f:selectItem itemValue="2" itemLabel="m2" />  
+        <f:selectItem itemValue="2" itemLabel="m2" /> 
+    </h:selectOneMenu>
+      
+  </div>
+</div>
+
+</fieldset>
+</h:form>
+    </ui:define>
+
+</ui:composition>
