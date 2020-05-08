@@ -1,46 +1,37 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="./Lobby.xhtml"
-                xmlns:h="http://xmlns.jcp.org/jsf/html">
-
-    <ui:define name="top">
-        top
-    </ui:define>
-
-    <ui:define name="content">
-         <h:form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>MENÚ</legend>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="crearTerreno"></label>
-  <div class="col-md-4">
-    <h:button styleClass="btn btn-primary" value="Crear Terreno"/>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="misTerrenos"></label>
-  <div class="col-md-4">
-    <h:button styleClass="btn btn-primary" value="Mis Terrenos"/>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="verTutorial"></label>
-  <div class="col-md-4">
-    <h:button styleClass="btn btn-primary" value="Ver Tutorial"/>
-  </div>
-</div>
-
-</fieldset>
-</h:form>
-    </ui:define>
-
-</ui:composition>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+               <title> Inicio de sesion </title>
+        <center> <h1> Menú  </h1> </center>
+        <style>
+            .botones{text-align: center;}
+            .boton{background-color: beige;
+                   padding: 40px;
+                   margin: 40px;   
+                   display: inline-block;
+            }                                   
+        </style>
+    </h:head>
+    <h:body>
+                        <!-- imagen cultivo -->
+                        <center> <img src="cultivo.jpg"> </img> </center> 
+                        
+                        <div class="infoGeneral"> 
+                            <center>
+                                
+                                <h3>
+                                    A continuacion, encontrarás un menú en el cual podrás crear un terreno
+                                    y administrar tus terrenos en caso de que ya hayan sido creados
+                                                                                                            
+                                </h3>
+                                
+                                <div class="botones">
+                                    <a href="Terreno.xhtml"> <div class="boton"> <div> <input type="submit" value="Crear Terreno" name="crear_terreno" /> </div> </div> </a>
+                                    <a href="MisTerrenos.xhtml"> <div class="boton"> <div> <input type="submit" value="Mis Terrenos" name="terrenos_usuario" /> </div> </div> </a>                                                           
+                                </div>                                                                                                                                                                                     
+                            </center>                       
+                        </div>
+    </h:body>
+</html>

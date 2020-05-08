@@ -4,6 +4,9 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title> registro </title>
+        <meta name="viewport" content="width=device-width, user scalable=yes, initial-
+              scale=1.0. maximum-scale=3.0, minimum-scale=1.0"></meta>
+        
     </h:head>
     
     <h:body>
@@ -19,17 +22,20 @@
                         <p>
                             
                         </p>
-                        <div class="registroNombre"> <label> Nombre de usuario: </label> <input type="text" name="registro_usuario" value="" /> </div>
-                        <p>
-                            
-                        </p>
-                        <div class="registroContraseña"> <label>Contraseña: </label> <input type="password" name="registro_contraseña" value="" /> </div>
-                        <p>
-                            
-                        </p>
-                        <div class="registroCorreo"> <label> Correo electronico: </label> <input type="text" name="registro_correo" value="" /> </div>
+                        <div class="contenedor">
+                            <form action=""></form> <div class="registroNombre"> <label> Nombre de usuario: </label> <input type="text" name="registro_usuario" value="" /> </div>
+                            <p>
+                                <!-- Espacio -->
+                            </p>
+                            <div class="registroContraseña"> <label>Contraseña: </label> <input type="password" name="registro_contraseña" value="" /> </div>
+                            <p>
+                                 <!-- Espacio -->
+                            </p>
+                            <div class="registroCorreo"> <label> Correo electronico: </label> <input type="text" name="registro_correo" value="" /> </div>
                         
-                        <div>  <input type="submit" value="Registrarse" name="registro_exitoso" /> </div>
+                            <div> <a href="InicioDeSesion.xhtml"> <input type="submit" value="Registrarse" name="registro_exitoso" /> </a>  </div>
+                        </div>
+                        
     </h:body>
 </html>
 
