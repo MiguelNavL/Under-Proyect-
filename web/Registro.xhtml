@@ -7,35 +7,70 @@
         <meta name="viewport" content="width=device-width, user scalable=yes, initial-
               scale=1.0. maximum-scale=3.0, minimum-scale=1.0"></meta>
         
+        <style> 
+        .encabezado{text-align: center; font: oblique bold 120% cursive;}
+        .contenedor_TipoCuenta{text-align: center; font: oblique bold 120% cursive;}    
+        .contenedor_Registro_{text-align: center; font: oblique bold 120% cursive;}
+        .registro{          background-color: beige;
+                             padding: 10px;
+                             margin: 10px;
+                             display: list-item}
+        
+        </style>
+        
+        
+        
+        
     </h:head>
     
     <h:body>
                         <!-- imagen cultivo -->
                         <center> <img src="cultivo.jpg"> </img> </center> 
-                        <h2>  Por favor, diligencie todos los campos para registrarse exitosamente. </h2>
-                        <label for="tipoCuenta"> Tipo de cuenta </label>
-                        <select name="tipoCuenta">   
-                            <option disabled=""> Selecciona el tipo de cuenta</option>
-                            <option value="E">Empresarial </option>
-                            <option value="P">Personal </option>
-                        </select>
+                        <center>  <div class="encabezado"> Por favor, diligencie todos los campos para registrarse exitosamente. </div> </center>
                         <p>
                             
                         </p>
-                        <div class="contenedor">
-                            <form action=""></form> <div class="registroNombre"> <label> Nombre de usuario: </label> <input type="text" name="registro_usuario" value="" /> </div>
-                            <p>
-                                <!-- Espacio -->
-                            </p>
-                            <div class="registroContraseña"> <label>Contraseña: </label> <input type="password" name="registro_contraseña" value="" /> </div>
-                            <p>
-                                 <!-- Espacio -->
-                            </p>
-                            <div class="registroCorreo"> <label> Correo electronico: </label> <input type="text" name="registro_correo" value="" /> </div>
+                        <div class="contenedor_TipoCuenta">
+                             <!-- seleccionar tipo de cuenta -->
+                             <center>
+                                    <label for="tipoCuenta"> Tipo de cuenta </label>
+                                    <select name="tipoCuenta">   
+                                    <option disabled=""> Selecciona el tipo de cuenta</option>
+                                    <option value="E">Empresarial </option>
+                                    <option value="P">Personal </option>
+                                    </select>
+                             </center>
+                        </div> 
+                        <p>
+                            
+                        </p>
+                             <center>
+                                 <div class="contenedor_Registro_">
+                                     
+                                     <label> Nombre de usuario: </label> <div class="registro"> <input type="text" name="Nombre de " value="" /> </div>
+                                     <p>
+                                         
+                                     </p>
+                                     <label> Contraseña:        </label> <div class="registro"> <input type="password" name="contraseña" value="" /> </div>
+                                     <p>
+                                         
+                                     </p>
+                                     <label> Correo Electronico:</label> <div class="registro"> <input type="text" name="correo" value="" /> </div> 
+                                     <p>
+                                         
+                                     </p>
+                                     
+                                     <label> Presupuesto aproximado:</label> <div class="registro"> <input type="text" name="presupuesto" value="$" /> </div> 
+                                     <p>
+                                         
+                                     </p>
+                                     <a href="InicioDeSesion.xhtml"> <input type="submit" value="Registrarse" name="button_registroExitoso" /> </a>
+                                 </div>
+                             </center>
                         
-                            <div> <a href="InicioDeSesion.xhtml"> <input type="submit" value="Registrarse" name="registro_exitoso" /> </a>  </div>
-                        </div>
                         
+                            
+                                                                    
     </h:body>
 </html>
 

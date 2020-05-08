@@ -6,25 +6,28 @@
     <h:head>
         <title> Inicio de sesion </title>
         <center> <h1> Inicio de sesión  </h1> </center>
+        <style> 
+                    .contenedor_inicioDeSesion{text-align: center; font: oblique bold 120% cursive;}
+        </style>
         
     </h:head>
     <h:body>
-        <h:form>
+        <div class="contenedor_inicioDeSesion"> 
                  <!-- imagen cultivo -->
                  <center> <img src="cultivo.jpg"> </img> </center> 
                  
-                 <center> <div class="campo_usuario" id="campo_usuario"> Nombre de usuario: <input type="text" name="usuario" value="" /> </div> </center>
+                 <center> <div> Nombre de usuario: <input type="text" name="usuario" value="" /> </div> </center>
                  <p> 
                  
                  </p>
-                 <center> <div class="campo_contrasñeña" id="campo_contraseña"> Contraseña: <input type="password" name="contraseña" value="" /> </div> </center>
+                 <center> <div> Contraseña: <input type="password" name="contraseña" value="" /> </div> </center>
                  <p> 
                  
                  </p>
                  <center> <div> <a href="Menu.xhtml"> <input type="submit" value="Ingresar" name="button_ingresar" /> </a> </div> </center>
             
+        </div> 
             
-            
-        </h:form>
+        
     </h:body>
 </html>
